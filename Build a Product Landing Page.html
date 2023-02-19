@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Landing Page</title>
+    <style>
+      /* CSS for nav-bar */
+      #nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+
+      #nav-bar a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* CSS for form */
+      #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+      }
+
+      #email {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 2px solid #333;
+        border-radius: 0.5rem;
+        width: 100%;
+      }
+
+      #submit {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+
+      /* CSS for video */
+      #video {
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+      }
+
+      /* CSS for media queries */
+      @media (min-width: 768px) {
+        #nav-bar {
+          font-size: 1.5rem;
+        }
+
+        #form {
+          width: 50%;
+        }
+
+        #email {
+          width: 70%;
+        }
+
+        #submit {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://via.placeholder.com/150" alt="Logo" />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="features">
+        <h2>Features</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </section>
+
+      <section id="pricing">
+        <h2>Pricing</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </section>
+
+      <section id="video-container">
+        <h2>Product Video</h2>
+        <video id="video" controls>
+          <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="email">Enter your email:</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required />
+          <input id="submit" type="submit" name="submit" placeholder="submit" required/>
